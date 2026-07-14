@@ -1,0 +1,113 @@
+{
+  "site": {
+    "title": "守屋慎二郎 / Shinjiro Moriya",
+    "description": "ソフトウェアから素材、知性、コミュニティへ。創造が始まり、育っていく条件を設計する守屋慎二郎のプロフィール。",
+    "og_description": "創造が始まり、育っていく条件を設計する、守屋慎二郎のプロフィール。",
+    "url": "https://shinjiro-moriya.com/",
+    "og_image": "https://shinjiro-moriya.com/og-image.png"
+  },
+  "hero": {
+    "kicker": "A profile of ideas, practice, and possibility",
+    "title": "Who is Shinjiro Moriya?",
+    "roles": ["Developer.", "Designer.", "Founder.", "Maker."],
+    "statement": "Designing conditions for creation.",
+    "copy": "ソフトウェアから素材、知性、コミュニティへ。守屋慎二郎は領域を横断しながら、人が自ら手を動かし、何かを作りたくなる環境と仕組みを設計している。目指すのは、完成品をつくることだけではない。創造が始まり、育っていくための条件そのものをつくることだ。",
+    "index": ["01 Software", "02 Module", "03 Company", "04 Manifesto"]
+  },
+  "marquee": ["Designing conditions for creation", "Tools should invite action", "Products are conversations", "Modules are possibilities"],
+  "beginning": {
+    "number": "Chapter 01",
+    "title": "The Beginning",
+    "lead": "Software was the first language. But code itself was never the final subject.",
+    "body": [
+      "はじまりはソフトウェアだった。画面の向こうで状態が変わり、人の行動が変わり、まだ存在しない仕組みが数行のコードから立ち上がる。その感覚は、彼にとって技術以上のものだった。",
+      "しかし、関心はいつもコードそのものから少し外れていた。なぜ人は作るのか。どういう余白があれば、誰かは自分の手を動かしたくなるのか。"
+    ],
+    "quote": "なぜ人は作るのか。"
+  },
+  "software": {
+    "number": "Chapter 02",
+    "title": "Software was only the beginning.",
+    "fields": ["Systems", "Infrastructure", "Intelligence", "Materials", "Geometry", "Interfaces", "Modularity", "Community", "Tools"],
+    "note": "これらは目的ではない。すべて、創造の条件を設計するための手段だった。"
+  },
+  "modular": {
+    "number": "Chapter 03",
+    "title": "Modular Thinking",
+    "lead": ["完成した形から考えない。", "最小の要素と、それらが変化できる関係から考える。"],
+    "modules": [
+      {"type": "01 / UNIT", "name": "ELEMENT", "description": "意味を持つ最小の単位。"},
+      {"type": "02 / RELATION", "name": "INTERFACE", "description": "要素同士が出会い、接続する場所。"},
+      {"type": "03 / BEHAVIOR", "name": "RULE", "description": "組み替えを可能にする、最小限の約束。"},
+      {"type": "04 / POSSIBILITY", "name": "VARIATION", "description": "使い手や状況によって生まれる違い。"},
+      {"type": "05 / SYSTEM", "name": "ECOSYSTEM", "description": "変化が循環し、仕組みそのものが育つ状態。"}
+    ],
+    "maxim": ["形を固定せず、関係を設計する。", "完成ではなく、変化できる余白をつくる。"]
+  },
+  "conditions": {
+    "number": "Chapter 04",
+    "title": "Designing Conditions",
+    "lead": "Projects are not trophies. They are implementations of a philosophy.",
+    "projects": [
+      {"type": "Company as a studio", "name": "JIROMO", "description": "Webアプリケーション構築と複数の自社プロダクト運営を行う、守屋慎二郎の実験と実装の母体。"},
+      {"type": "Product platform", "name": "Profondien", "description": "完成品として閉じず、組み替え、拡張し、使う人が自分の余白を加えられるプロダクトプラットフォームへ。"}
+    ]
+  },
+  "company": {
+    "number": "Interlude",
+    "title": "The company is the workshop.",
+    "kicker": "株式会社JIROMO / Founded in January 2023",
+    "lead": "個人の思想は、会社という器を持つことで反復可能な実験になる。",
+    "facts": [
+      {"label": "Representative", "value": "守屋 慎二郎"},
+      {"label": "Primary Work", "value": "Webアプリケーションの構築、自社プロダクトの運営・開発"}
+    ],
+    "works": [
+      {"name": "Profondien", "description": "革製品を、拡張可能なプラットフォームとして再定義する。", "url": "https://profondien.com"},
+      {"name": "ものきろ", "description": "ものの記録と発見をめぐる、生活に近いソフトウェアの実験。", "url": "https://monokiro.com"},
+      {"name": "docchitte", "description": "選ぶ、比べる、決めるという行為を軽くするためのプロダクト。", "url": "https://docchitte.com"},
+      {"name": "Millrect", "description": "構造と生成、図形と知性のあいだにある設計言語を探る。", "url": "https://millrect.com"},
+      {"name": "Displave", "description": "表示、配置、場の作り方をめぐるインターフェイスの実験。", "url": "https://displave.com"}
+    ]
+  },
+  "philosophy": {
+    "number": "Chapter 05",
+    "title": "Philosophy",
+    "declarations": [
+      {"title": "Technology should disappear.", "body": "技術は、体験のために静かに消えていくべきだ。"},
+      {"title": "Products are conversations.", "body": "製品は完成物ではなく、使い手との対話で育つ。"},
+      {"title": "Simplicity is not reduction.", "body": "シンプルとは削ることではない。本質だけが残る状態である。"},
+      {"title": "A module is a possibility.", "body": "モジュールとは部品ではない。可能性である。"},
+      {"title": "The unfinished has gravity.", "body": "未完のものには、人を引き寄せる重力がある。"}
+    ]
+  },
+  "timeline": {
+    "number": "Chapter 06",
+    "title": "Timeline of Thought",
+    "items": [
+      {"number": "01", "title": "Systems", "body": "複雑さを、個別の問題ではなく関係の構造として捉える。人が自然に動ける仕組みは、良い問いから始まる。"},
+      {"number": "02", "title": "Infrastructure", "body": "見えない基盤が、創造の速度と自由度を変える。裏側にあるものほど、体験を静かに支えている。"},
+      {"number": "03", "title": "Augmentation", "body": "答えを出す機械ではなく、思考を増幅する相手と向き合う。作る前の迷いにも価値がある。"},
+      {"number": "04", "title": "Material", "body": "物質に戻る。手触り、経年変化、組み替えられる構造。ソフトウェアの思想を素材へ移植する。"},
+      {"number": "05", "title": "Conditions", "body": "完成品を渡すのではなく、誰かが作り始められる条件を届ける。静けさや余白もまた設計できる。"}
+    ]
+  },
+  "journal": {
+    "number": "Chapter 07",
+    "title": "Journal / Thoughts",
+    "thoughts": [
+      {"number": "Thought 001", "title": "機械が読むWeb", "body": "公開とは、人に見せることだけではなくなっていく。機械が理解し、必要な場面で文脈として運べる構造が重要になる。"},
+      {"number": "Thought 014", "title": "完成品より条件", "body": "人は完成品を受け取るだけでは満足しない。自分で手を加えられる余地がある時、ものは少しだけ自分のものになる。"},
+      {"number": "Thought 027", "title": "素材というシステム", "body": "素材を固定された商品として扱わず、拡張可能なインターフェイスとして扱う。経年変化はアップデートの一種かもしれない。"},
+      {"number": "Thought 036", "title": "思考の入口", "body": "プロフィールサイトの目的は、経歴を証明することではない。会って話してみたいと思わせる、思考の入口を置くことだ。"}
+    ]
+  },
+  "manifesto": {
+    "number": "Final Chapter",
+    "title": "Manifesto",
+    "lines": ["I don't build products.", "I build systems", "that encourage people", "to create."],
+    "name": "Shinjiro Moriya",
+    "contact_label": "Contact",
+    "contact_url": "https://docs.google.com/forms/d/e/1FAIpQLSeej9FS31Q02It_-28930s3vM-hh_NYoetUhFqKJJzmmjwtvw/viewform"
+  }
+}

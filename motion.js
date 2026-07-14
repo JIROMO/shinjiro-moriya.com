@@ -1,5 +1,33 @@
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+const fitText = document.querySelector("[data-fit-text]");
+
+if (fitText && !CSS.supports("text-fit", "grow")) {
+  const resizeFittedText = () => {
+    const availableWidth = fitText.getBoundingClientRect().width;
+    if (!availableWidth) return;
+
+    fitText.style.fontSize = "100px";
+    const range = document.createRange();
+    range.selectNodeContents(fitText);
+    const naturalWidth = range.getBoundingClientRect().width;
+    if (!naturalWidth) return;
+
+    let fittedSize = (100 * availableWidth) / naturalWidth;
+    fitText.style.fontSize = `${fittedSize}px`;
+
+    const renderedWidth = range.getBoundingClientRect().width;
+    if (renderedWidth) {
+      fittedSize *= availableWidth / renderedWidth;
+      fitText.style.fontSize = `${fittedSize}px`;
+    }
+  };
+
+  resizeFittedText();
+  window.addEventListener("resize", resizeFittedText, { passive: true });
+  document.fonts?.ready.then(resizeFittedText);
+}
+
 if (!reducedMotion.matches) {
   const selectors = [
     ".chapter-number",
