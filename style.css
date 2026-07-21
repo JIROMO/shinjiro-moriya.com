@@ -21,10 +21,14 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 8% 6%, rgba(255, 99, 195, 0.18), transparent 24rem),
     radial-gradient(circle at 92% 18%, rgba(33, 212, 253, 0.2), transparent 28rem),
@@ -35,6 +39,13 @@ body {
   color: var(--ink);
   font-family: Inter, "Hiragino Sans", "Yu Gothic", sans-serif;
   letter-spacing: 0;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
 }
 
 main {
