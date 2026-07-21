@@ -2548,3 +2548,24 @@ body {
   font-size: var(--type-large) !important;
   line-height: 1.12 !important;
 }
+
+/* Mobile browsers resize their visual viewport while the address bar moves.
+   Keep scrolling on the compositor and avoid replaying dozens of reveal layers. */
+@media (max-width: 900px) and (prefers-reduced-motion: no-preference) {
+  .motion-ready .portfolio-view .reveal-item {
+    opacity: 1;
+    translate: none;
+    scale: none;
+    transition: none;
+    will-change: auto;
+  }
+
+  .portfolio-view :is(.role-reel span, .marquee div) {
+    will-change: auto;
+  }
+
+  .site-masthead__name,
+  .portfolio-view .role-reel {
+    contain: layout paint;
+  }
+}

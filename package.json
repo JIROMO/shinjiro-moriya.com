@@ -1,0 +1,12 @@
+{
+  "name": "shinjiro-moriya-com",
+  "private": true,
+  "scripts": {
+    "build": "php scripts/build.php",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
