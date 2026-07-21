@@ -1,10 +1,16 @@
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const outputDirectory = join(root, "dist");
 const content = JSON.parse(await readFile(join(root, "content.json"), "utf8"));
+const assetVersion = createHash("sha256")
+  .update(await readFile(join(root, "style.css")))
+  .update(await readFile(join(root, "motion.js")))
+  .digest("hex")
+  .slice(0, 10);
 
 const e = (value) => String(value)
   .replaceAll("&", "&amp;")
@@ -122,8 +128,8 @@ const html = `<!doctype html>
     <meta name="twitter:description" content="${e(content.site.og_description)}" />
     <meta name="twitter:image" content="${e(content.site.og_image)}" />
     <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="motion.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=${assetVersion}" />
+    <script src="motion.js?v=${assetVersion}" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4E9305L4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

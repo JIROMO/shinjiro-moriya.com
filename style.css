@@ -2419,6 +2419,11 @@ body {
 }
 
 @media (max-width: 900px) {
+  .site-masthead {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .site-masthead__top {
     grid-template-columns: 1fr auto;
     gap: 16px;
@@ -2437,6 +2442,10 @@ body {
   }
 
   .site-masthead__name {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     font-size: 10.2vw;
     white-space: nowrap;
   }
