@@ -31,4 +31,7 @@ npm install
 npm run deploy
 ```
 
+Cloudflare Workers BuildsがGitHubリポジトリと連携されています。`main`ブランチへの
+pushは本番へ自動デプロイされ、その他のブランチへのpushはプレビュー版を生成します。
+
 公開先: [https://shinjiro-moriya.jiromo.workers.dev/](https://shinjiro-moriya.jiromo.workers.dev/)
