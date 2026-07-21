@@ -2,7 +2,7 @@
   "name": "shinjiro-moriya-com",
   "private": true,
   "scripts": {
-    "build": "php scripts/build.php",
+    "build": "node scripts/build.mjs",
     "dev": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy"
   },

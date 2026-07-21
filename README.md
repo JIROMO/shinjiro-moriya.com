@@ -5,26 +5,25 @@
 ## ローカル起動
 
 ```sh
-php -S 127.0.0.1:8080
+npm install
+npm run dev
 ```
 
-ブラウザで `http://127.0.0.1:8080/` を開きます。
+Wranglerが表示するローカルURLをブラウザで開きます。
 
 ## コンテンツ管理
 
 プロフィール本文、プロジェクト、会社情報、タイムラインなどの表示内容は
-`content.json` で管理します。`index.php` がJSONを読み込み、HTMLを生成します。
+`content.json` で管理します。`scripts/build.mjs` がJSONを読み込み、HTMLを生成します。
 
-HTML構造は `views/home.php` で管理しています。共通のセクション描画は
-`views/_components.php`、head・ナビゲーション・footはそれぞれの `_` 付きpartialに
-まとめています。スタイルは `style.css` で一括管理しています。
+HTML構造は `scripts/build.mjs`、スタイルは `style.css` で管理しています。
 
 ## サイト
 [https://shinjiro-moriya.com/](https://shinjiro-moriya.com/)
 
 ## Cloudflare Workers
 
-PHPテンプレートから静的ファイルを生成し、Cloudflare Workers Static Assetsへ公開します。
+`content.json`から静的ファイルを生成し、Cloudflare Workers Static Assetsへ公開します。
 
 ```sh
 npm install
